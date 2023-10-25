@@ -1,0 +1,71 @@
+body {
+    max-width:100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+}
+
+#screen {
+    margin: 0px;
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url("../media/terminal_bck.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+#scr_content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5%;
+    width: 90%;
+    height: 95%;
+    font-family: 'terminal-font';
+    font-size: large;
+    color: rgba(0, 235, 0, 0.90);
+    box-shadow: 10px, 0px, 0px, rgb(172, 255, 47);
+    -webkit-animation: flicker 2s infinite;
+}
+
+#enter {
+    -webkit-animation: enter 1s infinite;
+}
+
+input {
+    font-family: 'terminal-font';
+    font-size: large;
+    color: rgba(0, 235, 0, 0.90);
+    box-shadow: 10px, 0px, 0px, rgb(172, 255, 47);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+  }
+
+@font-face {
+    font-family: 'terminal-font';
+    src: url("../font/D3DigibitmapismTypeAWide-4Bxx.ttf") format('truetype');;
+}
+
+@-webkit-keyframes flicker
+{
+    0% {opacity:0.6;
+        box-shadow: 10px, 0px, 0px, rgba(172, 255, 47, 0.6);}
+    9% {opacity:0.6;
+        box-shadow: 10px, 0px, 0px, rgba(172, 255, 47, 0.6);}
+    10% {opacity:.5;
+        box-shadow: 10px, 0px, 0px, rgba(172, 255, 47, 0.5);}
+    13% {opacity:0.7;
+        box-shadow: 10px, 0px, 0px, rgba(172, 255, 47, 0.7);}
+    20% {opacity:.5;
+        box-shadow: 10px, 0px, 0px, rgba(172, 255, 47, 0.5);}
+    25% {opacity:0.9;
+        box-shadow: 10px, 0px, 0px, rgb(172, 255, 47);}
+}
+
+@-webkit-keyframes enter
+{
+    0% {opacity:0;}
+    50% {opacity:1;}
+    50% {opacity:0;}
+}
