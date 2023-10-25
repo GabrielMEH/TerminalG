@@ -69,3 +69,11 @@ input {
     50% {opacity:1;}
     50% {opacity:0;}
 }
+
+#input_usr {
+    display: flex;
+}
+
+#input_psw {
+    display: flex;
+}

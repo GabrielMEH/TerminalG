@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index_stl.css">
-    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
     <title>Document</title>
 </head>
     <body>
@@ -18,11 +19,18 @@
                     <br>
                     But I am already saved, for the Machine is immortal...
                     <br>
-                    ...even in death I serve the Omnissiah. 
+                    ...even in death I serve the Omnissiah.
+                    <br>
+                    <form method="post" action="#">
+                        <label for="user">User:</label> 
+                        <input type="textarea" id="user" name="user_input" maxlength="70" spellcheck="false" autocomplete="off" required>
+                        <div id="error_msg">ACESS DENIED</div>
+                        <div id="usr_psw">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" maxlength="70" spellcheck="false" autocomplete="off" required>
+                        </div>
+                    </form>
                 </div>
-                <form method="post">
-                    <input type="textarea" name="command" class="command" value="__" maxlength="70" spellcheck="false" autocomplete="off">
-                </form>
             </div>
         </div>
     </body>
