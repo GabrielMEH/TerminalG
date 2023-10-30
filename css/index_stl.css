@@ -77,3 +77,11 @@ input {
 #input_psw {
     display: flex;
 }
+
+#hint img{
+    position: absolute;
+    top: -100px;
+    right: 0px;
+    z-index: 1;
+    width: 400px;
+}
